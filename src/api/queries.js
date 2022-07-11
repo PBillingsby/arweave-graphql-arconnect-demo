@@ -1,4 +1,3 @@
-
 export const recipientQuery = (address) => {
   const recipientsQuery = {
     query: `
@@ -6,7 +5,6 @@ export const recipientQuery = (address) => {
       transactions(recipients: ["${address}"]) {
         edges {
           node {
-            recipient
             id
             owner {
               address
